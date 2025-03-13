@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.core.content.ContextCompat;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -22,10 +21,6 @@ public class MainActivity extends AppCompatActivity {
         Button myButton = findViewById(R.id.myButton);
         myButton.setOnClickListener(view -> {
             myTextView.setText("Button Clicked!");
-        });
-        Button colorButton = findViewById(R.id.colorButton);
-        colorButton.setOnClickListener(view -> {
-            myTextView.setTextColor(ContextCompat.getColor(this, android.R.color.holo_red_dark));
         });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

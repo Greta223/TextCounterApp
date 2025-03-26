@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FinTechApp</string>
+    <string name="count_words">Count Words</string>
+    <string name="count_characters">Count Characters</string>
+    <string name="empty_input_message">Text is required</string>
+    <string name="enter_some_words">Enter some words…</string>
+    <string name="calculate">Calculate</string>
 </resources>

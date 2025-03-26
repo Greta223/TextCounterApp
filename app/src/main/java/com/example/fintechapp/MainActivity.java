@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         TextView myTextView = findViewById(R.id.myTextView);
-        Button myButton = findViewById(R.id.myButton);
+        Button myButton = findViewById(R.id.calculate_button);
         myButton.setOnClickListener(view -> {
             myTextView.setText("Button Clicked!");
         });

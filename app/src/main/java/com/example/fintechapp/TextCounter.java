@@ -2,7 +2,7 @@ package com.example.fintechapp;
 
 public class TextCounter {
     public static int countWords(String text) {
-        if (text == null || text.isEmpty()) {
+        if (text == null || text.trim().isEmpty()) {
             return 0;
         }
         String[] words = text.trim().split("\\s+");
